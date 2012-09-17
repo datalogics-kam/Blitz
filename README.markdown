@@ -1,3 +1,5 @@
+If you're making slides for a Blitz talk at [SecondConf](http://secondconf.com), see the [notes on making and testing your slides](https://github.com/kamitchell/Blitz/wiki/Create-and-test-your-Blitz-talk).
+
 # Blitz
 
 A simple presentation app that enforces a specific format: 
