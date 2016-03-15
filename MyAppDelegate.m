@@ -90,7 +90,12 @@ static NSData* colorDataFromHexRGB( NSString *inColorString ) {
 }
 
 - (void) advanceSlide {
-    [[[keynote slideshows] objectAtIndex:0] advance];
+    if (keynote.isRunning) {
+        [keynote showNext];
+    }
+    else {
+        NSLog(@"Keynote is not running");
+    }
 }
 
 - (void) tick:(NSTimer*) timer {
@@ -114,6 +119,17 @@ static NSData* colorDataFromHexRGB( NSString *inColorString ) {
 - (IBAction)showFloatingCounters:(id)sender
 {
     self.keynote = [SBApplication applicationWithBundleIdentifier:@"com.apple.iWork.Keynote"];
+
+    // If it can't be found by bundle, try finding it by location.
+    if (![self.keynote respondsToSelector:@selector(showNext)]) {
+        self.keynote = [SBApplication applicationWithURL:[NSURL URLWithString:@"file:///Applications/Keynote.app"]];
+    }
+
+    if (![self.keynote respondsToSelector:@selector(showNext)]) {
+        NSRunAlertPanel(@"Can't find Keynote", @"Can't find Keynote; timer will run but slides won't advance;", @"OK", nil, nil);
+        self.keynote = nil;
+    }
+
 
     self.windowControllers = [NSMutableArray array];
     

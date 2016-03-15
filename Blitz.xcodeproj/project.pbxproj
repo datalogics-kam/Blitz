@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A02C51D1269774D00CBE952 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02C51C1269774D00CBE952 /* ScriptingBridge.framework */; };
-		0A02C5351269788900CBE952 /* Keynote.app in Sources */ = {isa = PBXBuildFile; fileRef = 0A02C5241269780400CBE952 /* Keynote.app */; };
 		0A99C7A6126965B300B0EAA5 /* CustomWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99C7A5126965B300B0EAA5 /* CustomWindow.m */; };
 		0A99C7A9126965BC00B0EAA5 /* MyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A99C7A8126965BC00B0EAA5 /* MyAppDelegate.m */; };
 		0A99C7AE126965D000B0EAA5 /* CounterWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A99C7AD126965D000B0EAA5 /* CounterWindow.xib */; };
@@ -24,6 +23,7 @@
 		34E6612E1065EB97001B6FE9 /* SpeakerNotes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34E6612D1065EB97001B6FE9 /* SpeakerNotes.xib */; };
 		34E6614E1065EBAE001B6FE9 /* SpeakerNotesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E6614D1065EBAE001B6FE9 /* SpeakerNotesWindowController.m */; };
 		376586FD1009A33F00B9BC9B /* MyApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 376586FC1009A33F00B9BC9B /* MyApplication.m */; };
+		3AD567201C98834800612534 /* Keynote.app in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5671F1C98834800612534 /* Keynote.app */; };
 		79BB568B0FF7374A00D94BEB /* BlitzPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BB56890FF7374A00D94BEB /* BlitzPDFView.m */; };
 		79BB56AC0FF7386500D94BEB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BB56AB0FF7386500D94BEB /* Quartz.framework */; };
 		79BFE53A0FF7E738000668B2 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BFE5390FF7E738000668B2 /* Sparkle.framework */; };
@@ -67,7 +67,6 @@
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A02C51C1269774D00CBE952 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		0A02C5241269780400CBE952 /* Keynote.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Keynote.app; path = "/Applications/iWork '09/Keynote.app"; sourceTree = "<absolute>"; };
 		0A99C7A4126965B300B0EAA5 /* CustomWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWindow.h; sourceTree = "<group>"; };
 		0A99C7A5126965B300B0EAA5 /* CustomWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWindow.m; sourceTree = "<group>"; };
 		0A99C7A7126965BC00B0EAA5 /* MyAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		34E6614D1065EBAE001B6FE9 /* SpeakerNotesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeakerNotesWindowController.m; sourceTree = "<group>"; };
 		376586FB1009A33F00B9BC9B /* MyApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyApplication.h; sourceTree = "<group>"; };
 		376586FC1009A33F00B9BC9B /* MyApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyApplication.m; sourceTree = "<group>"; };
+		3AD5671F1C98834800612534 /* Keynote.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Keynote.app; path = /Users/kam/src/Blitz/../../../../Applications/Keynote.app; sourceTree = "<absolute>"; };
 		79BB56890FF7374A00D94BEB /* BlitzPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlitzPDFView.m; sourceTree = "<group>"; };
 		79BB568A0FF7374A00D94BEB /* BlitzPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlitzPDFView.h; sourceTree = "<group>"; };
 		79BB56AB0FF7386500D94BEB /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
@@ -157,7 +157,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* C4BlitzPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				0A02C5241269780400CBE952 /* Keynote.app */,
+				3AD5671E1C98832200612534 /* ScriptingBridge Apps */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
@@ -231,6 +231,14 @@
 				0A02C51C1269774D00CBE952 /* ScriptingBridge.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AD5671E1C98832200612534 /* ScriptingBridge Apps */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5671F1C98834800612534 /* Keynote.app */,
+			);
+			name = "ScriptingBridge Apps";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A02C5351269788900CBE952 /* Keynote.app in Sources */,
+				3AD567201C98834800612534 /* Keynote.app in Sources */,
 				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				79BB568B0FF7374A00D94BEB /* BlitzPDFView.m in Sources */,
