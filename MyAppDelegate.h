@@ -21,7 +21,7 @@
 @property (retain) NSMutableArray *windowControllers;
 @property (retain) NSWindowController *preferencesWindowController;
 @property (retain) KeynoteApplication *keynote;
-@property (assign, setter=setSecondsElapsed:) NSTimeInterval secondsElapsed;
+@property (nonatomic, assign, setter=setSecondsElapsed:) NSTimeInterval secondsElapsed;
 @property (assign) bool running;
 @property (retain) NSTimer *timer;
 

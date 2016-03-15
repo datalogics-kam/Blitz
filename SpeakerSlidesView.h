@@ -23,8 +23,8 @@
     NSUInteger _pageIndex;
 }
 
-@property(retain/*,setter=setPDFDocument:*/) PDFDocument *pdfDocument;
-@property(assign) NSUInteger pageIndex;
+@property(nonatomic, retain/*,setter=setPDFDocument:*/) PDFDocument *pdfDocument;
+@property(nonatomic, assign) NSUInteger pageIndex;
 
 @property(retain) IBOutlet PDFView *currentSlideView;
 @property(retain) IBOutlet PDFView *nextSlideView;
