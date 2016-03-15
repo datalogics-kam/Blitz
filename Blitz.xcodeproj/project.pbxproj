@@ -27,7 +27,7 @@
 		79BB568B0FF7374A00D94BEB /* BlitzPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BB56890FF7374A00D94BEB /* BlitzPDFView.m */; };
 		79BB56AC0FF7386500D94BEB /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BB56AB0FF7386500D94BEB /* Quartz.framework */; };
 		79BFE53A0FF7E738000668B2 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79BFE5390FF7E738000668B2 /* Sparkle.framework */; };
-		79BFE5450FF7E762000668B2 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79BFE5390FF7E738000668B2 /* Sparkle.framework */; };
+		79BFE5450FF7E762000668B2 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79BFE5390FF7E738000668B2 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		79BFE55A0FF7ECDD000668B2 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 79BFE5590FF7ECDD000668B2 /* dsa_pub.pem */; };
 		79BFE61A0FF81A2C000668B2 /* blitz.icns in Resources */ = {isa = PBXBuildFile; fileRef = 79BFE6190FF81A2C000668B2 /* blitz.icns */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -263,7 +263,7 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Blitz" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -401,6 +401,7 @@
 					"$(value)",
 					"-DNS_BUILD_32_LIKE_64",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rentzsch.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Blitz;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -427,6 +428,7 @@
 					"$(value)",
 					"-DNS_BUILD_32_LIKE_64",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rentzsch.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = Blitz;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = macosx;
@@ -436,7 +438,7 @@
 		C05733CC08A9546B00998B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -451,10 +453,6 @@
 		C05733CD08A9546B00998B17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(NATIVE_ARCH_64_BIT)",
-					"$(NATIVE_ARCH_32_BIT)",
-				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
