@@ -144,7 +144,7 @@ static NSData* colorDataFromHexRGB( NSString *inColorString ) {
         NSPoint windowOrigin;
         windowOrigin.x = screenFrame.origin.x + screenFrame.size.width - windowFrame.size.width - 20;
 
-        if ([screen isEqual:[NSScreen mainScreen]] && [[NSScreen screens] count] > 1)
+        if (TOP_ON_AUDIENCE_SCREEN || ([screen isEqual:[NSScreen mainScreen]] && [[NSScreen screens] count] > 1))
             windowOrigin.y = screenFrame.origin.y + screenFrame.size.height - windowFrame.size.height - 40;
         else
              windowOrigin.y = screenFrame.origin.y + 20;
